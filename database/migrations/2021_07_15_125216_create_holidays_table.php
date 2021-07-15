@@ -17,10 +17,10 @@ class CreateHolidaysTable extends Migration
             $table->id();
             $table->timestamps();
             $table->string('destinazione', 100);
-            $table->string('data di partenza', 10);
-            $table->string('data di ritorno', 10);
+            $table->string('dataPartenza', 10);
+            $table->string('dataRitorno', 10);
             $table->unsignedTinyInteger('ospiti');
-            $table->unsignedTinyInteger('prezzo');
+            $table->integer('prezzo');
         });
     }
 
